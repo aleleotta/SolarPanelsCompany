@@ -3,12 +3,11 @@
     x:Class="SolarPanelsCompany.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:SolarPanelsCompany"
+    xmlns:local="clr-namespace:SolarPanelsCompany.Views"
     Shell.FlyoutBehavior="Disabled">
 
     <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        ContentTemplate="{DataTemplate local:Login}"
+        Route="Login" />
     
 </Shell>
