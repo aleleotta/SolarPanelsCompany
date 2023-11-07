@@ -21,7 +21,7 @@
                     </HorizontalStackLayout>
                     <HorizontalStackLayout Margin="10">
                         <Label Text="Password:" FontSize="18" VerticalTextAlignment="Center" FontFamily="Roboto"/>
-                        <Entry BackgroundColor="#0d0021" x:Name="passwordField" MinimumWidthRequest="150" Margin="15" HorizontalOptions="End"/>
+                        <Entry BindingContext="{x:Reference usernameField}"  BackgroundColor="#0d0021" x:Name="passwordField" MinimumWidthRequest="150" Margin="15" HorizontalOptions="End"/>
                     </HorizontalStackLayout>
             </StackLayout>
         </Border>
