@@ -17,7 +17,7 @@
                 <Label Text="Login" FontSize="28" HorizontalTextAlignment="Center" FontAttributes="Bold" FontFamily="Roboto"/>
                     <HorizontalStackLayout Margin="10">
                         <Label Text="Username:" FontSize="18" VerticalTextAlignment="Center" FontFamily="Roboto"/>
-                        <Entry BindingContext="{x:Reference passwordField}" BackgroundColor="{Binding BackgroundColor}}" x:Name="usernameField" MinimumWidthRequest="150" Margin="15" HorizontalOptions="End"/>
+                    <Entry BindingContext="{x:Reference passwordField}" Text="{Binding Text, Mode=TwoWay}" BackgroundColor="{Binding BackgroundColor}}" x:Name="usernameField" MinimumWidthRequest="{Binding MinimumWidthRequest, Mode=TwoWay}" Margin="15" HorizontalOptions="End"/>
                     </HorizontalStackLayout>
                     <HorizontalStackLayout Margin="10">
                         <Label Text="Password:" FontSize="18" VerticalTextAlignment="Center" FontFamily="Roboto"/>
