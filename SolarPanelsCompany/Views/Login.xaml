@@ -16,12 +16,12 @@
             <StackLayout>
                 <Label Text="Login" FontSize="28" HorizontalTextAlignment="Center" FontAttributes="Bold" FontFamily="Roboto"/>
                     <HorizontalStackLayout Margin="10">
-                        <Label Padding="0" Text="Username:" FontSize="18" VerticalTextAlignment="Center" FontFamily="Roboto"/>
-                        <Entry x:Name="usernameField" MinimumWidthRequest="150" Margin="15"/>
+                        <Label Text="Username:" FontSize="18" VerticalTextAlignment="Center" FontFamily="Roboto"/>
+                        <Entry BindingContext="{x:Reference passwordField}" BackgroundColor="{Binding BackgroundColor}}" x:Name="usernameField" MinimumWidthRequest="150" Margin="15" HorizontalOptions="End"/>
                     </HorizontalStackLayout>
                     <HorizontalStackLayout Margin="10">
-                        <Label Padding="0" Text="Password:" FontSize="18" VerticalTextAlignment="Center" FontFamily="Roboto"/>
-                        <Entry BindingContext="{x:Reference usernameField}" x:Name="passwordField" MinimumWidthRequest="150" Margin="15" HorizontalOptions="{Binding Value, Mode=TwoWay}"/>
+                        <Label Text="Password:" FontSize="18" VerticalTextAlignment="Center" FontFamily="Roboto"/>
+                        <Entry BackgroundColor="#0d0021" x:Name="passwordField" MinimumWidthRequest="150" Margin="15" HorizontalOptions="End"/>
                     </HorizontalStackLayout>
             </StackLayout>
         </Border>
