@@ -6,4 +6,9 @@ public partial class Login : ContentPage
     {
         InitializeComponent();
     }
+
+    private void StackLayout_Focused(object sender, FocusEventArgs e)
+    {
+
+    }
 }
