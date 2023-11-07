@@ -14,8 +14,37 @@
             StrokeThickness="0.1"
             Padding="6">
             <StackLayout>
-                <Label Text="Login" FontSize="28" HorizontalTextAlignment="Center" FontAttributes="Bold" FontFamily="Roboto"/>
-                <Label Text="Username:" FontSize="18" HorizontalTextAlignment="Center" FontAttributes="Bold" FontFamily="Roboto"/>
+                <Label Text="Login"
+                       FontSize="28"
+                       HorizontalTextAlignment="Center"
+                       FontAttributes="Bold"
+                       FontFamily="Roboto"/>
+                <HorizontalStackLayout Margin="10">
+                    <Label
+                        Padding="0"
+                        Text="Username:"
+                        FontSize="18"
+                        VerticalTextAlignment="Center"
+                        FontFamily="Roboto"/>
+                    <Entry
+                        x:Name="usernameField"
+                        MinimumWidthRequest="150"
+                        Margin="15"/>
+                </HorizontalStackLayout>
+                <HorizontalStackLayout Margin="10">
+                    <Label 
+                        Padding="0"
+                        Text="Password:"
+                        FontSize="18"
+                        VerticalTextAlignment="Center"
+                        FontFamily="Roboto"/>
+                    <Entry
+                        BindingContext="{x:Reference usernameField}"
+                        x:Name="passwordField"
+                        MinimumWidthRequest="150"
+                        Margin="15"
+                        HorizontalOptions="{Binding Value, Mode=TwoWay}"/>
+                </HorizontalStackLayout>
             </StackLayout>
         </Border>
     </VerticalStackLayout>
