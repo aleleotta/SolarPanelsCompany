@@ -13,17 +13,27 @@
             Stroke="Black"
             StrokeThickness="0.1"
             Padding="6">
-            <StackLayout>
-                <Label Text="Login" FontSize="28" HorizontalTextAlignment="Center" FontAttributes="Bold" FontFamily="Roboto"/>
-                    <HorizontalStackLayout Margin="10">
-                        <Label Text="Username:" FontSize="18" VerticalTextAlignment="Center" FontFamily="Roboto"/>
-                    <Entry BindingContext="{x:Reference passwordField}" Text="{Binding Text, Mode=TwoWay}" BackgroundColor="{Binding BackgroundColor}}" x:Name="usernameField" MinimumWidthRequest="{Binding MinimumWidthRequest, Mode=TwoWay}" Margin="15" HorizontalOptions="End"/>
+            <HorizontalStackLayout>
+                <VerticalStackLayout>
+                    <Label Text="Login" FontSize="28" HorizontalTextAlignment="Center" FontAttributes="Bold" FontFamily="Roboto"/>
+                    <HorizontalStackLayout HorizontalOptions="Center">
+                        <VerticalStackLayout VerticalOptions="Center">
+                            <Label Text="Username:" FontSize="18" VerticalTextAlignment="Center" FontFamily="Roboto"/>
+                        </VerticalStackLayout>
+                        <VerticalStackLayout VerticalOptions="Center">
+                            <Entry BindingContext="{x:Reference passwordField}" x:Name="usernameField" Text="{Binding Text, Mode=TwoWay}" BackgroundColor="{Binding BackgroundColor}}" MinimumWidthRequest="{Binding MinimumWidthRequest, Mode=TwoWay}"/>
+                        </VerticalStackLayout>
                     </HorizontalStackLayout>
-                    <HorizontalStackLayout Margin="10">
-                        <Label Text="Password:" FontSize="18" VerticalTextAlignment="Center" FontFamily="Roboto"/>
-                        <Entry BindingContext="{x:Reference usernameField}"  BackgroundColor="#0d0021" x:Name="passwordField" MinimumWidthRequest="150" Margin="15" HorizontalOptions="End"/>
+                    <HorizontalStackLayout HorizontalOptions="Center">
+                        <VerticalStackLayout VerticalOptions="Center">
+                            <Label Text="Password:" FontSize="18" VerticalTextAlignment="Center" FontFamily="Roboto"/>
+                        </VerticalStackLayout>
+                        <VerticalStackLayout VerticalOptions="Center">
+                            <Entry BindingContext="{x:Reference usernameField}" x:Name="passwordField" BackgroundColor="#0d0021" MinimumWidthRequest="150"/>
+                        </VerticalStackLayout>
                     </HorizontalStackLayout>
-            </StackLayout>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
         </Border>
     </VerticalStackLayout>
 </ContentPage>
