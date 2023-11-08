@@ -15,7 +15,7 @@
             Stroke="Black"
             StrokeThickness="0.1"
             StrokeShape="RoundRectangle 20, 20, 20, 20"
-            Padding="6">
+            Padding="8">
             <StackLayout>
                 <Label Text="Login" TextColor="White" HorizontalTextAlignment="Center" FontSize="28" FontAttributes="Bold" FontFamily="Roboto"/>
                 <HorizontalStackLayout Spacing="25" Margin="15" TranslationY="10">
