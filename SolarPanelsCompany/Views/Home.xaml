@@ -15,7 +15,10 @@
                 Stroke="Black"
                 StrokeThickness="0.1"
                 StrokeShape="RoundRectangle 20, 20, 20, 20"
-                Padding="0">
+                Padding="6">
+                <StackLayout>
+                    <Label Text="Appointments" HorizontalTextAlignment="Center" FontSize="24" FontAttributes="Bold" FontFamily="Roboto"/>
+                </StackLayout>
             </Border>
         </StackLayout>
     </StackLayout>
