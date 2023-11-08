@@ -17,14 +17,14 @@
             StrokeShape="RoundRectangle 20, 20, 20, 20"
             Padding="6">
             <StackLayout>
-                <Label Text="Login" HorizontalTextAlignment="Center" FontSize="28" FontAttributes="Bold" FontFamily="Roboto"/>
+                <Label Text="Login" TextColor="White" HorizontalTextAlignment="Center" FontSize="28" FontAttributes="Bold" FontFamily="Roboto"/>
                 <HorizontalStackLayout Spacing="25" Margin="15" TranslationY="10">
                     <VerticalStackLayout Spacing="50" VerticalOptions="Center">
-                        <Label Text="Username:" FontSize="18" VerticalTextAlignment="Center" FontFamily="Roboto"/>
-                        <Label Text="Password:" FontSize="18" VerticalTextAlignment="Center" FontFamily="Roboto"/>
+                        <Label Text="Username:" TextColor="White" FontSize="18" VerticalTextAlignment="Center" FontFamily="Roboto"/>
+                        <Label Text="Password:" TextColor="White" FontSize="18" VerticalTextAlignment="Center" FontFamily="Roboto"/>
                     </VerticalStackLayout>
                     <VerticalStackLayout Spacing="30" VerticalOptions="Center">
-                        <Entry BindingContext="{x:Reference passwordField}" x:Name="usernameField" Text="{Binding Text, Mode=TwoWay}"
+                        <Entry BindingContext="{x:Reference passwordField}" x:Name="usernameField"
                                BackgroundColor="{Binding BackgroundColor}" MinimumWidthRequest="150" MaximumWidthRequest="150"/>
                         <Entry BindingContext="{x:Reference usernameField}" x:Name="passwordField"
                                BackgroundColor="#0d0021" MinimumWidthRequest="150" MaximumWidthRequest="150"/>
