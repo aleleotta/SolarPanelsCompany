@@ -31,7 +31,7 @@
                     </VerticalStackLayout>
                 </HorizontalStackLayout>
                 <HorizontalStackLayout Margin="30" HorizontalOptions="Center">
-                    <Button Text="Login"/>
+                    <Button Text="Login" BackgroundColor="#0000B5" TextColor="White"/>
                 </HorizontalStackLayout>
             </StackLayout>
         </Border>
