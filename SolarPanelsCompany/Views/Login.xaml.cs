@@ -17,7 +17,7 @@ public partial class Login : ContentPage
         {
             usernameField.Text = "";
             passwordField.Text = "";
-            await Navigation.PushModalAsync(new Home(), true);
+            await Navigation.PushModalAsync(new Home());
         }
         else {
             usernameField.Text = "";

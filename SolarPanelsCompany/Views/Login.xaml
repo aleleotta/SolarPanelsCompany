@@ -27,11 +27,11 @@
                         <Entry BindingContext="{x:Reference passwordField}" x:Name="usernameField"
                                BackgroundColor="{Binding BackgroundColor}" MinimumWidthRequest="150" MaximumWidthRequest="150"/>
                         <Entry BindingContext="{x:Reference usernameField}" x:Name="passwordField"
-                               BackgroundColor="#0d0021" MinimumWidthRequest="150" MaximumWidthRequest="150"/>
+                               BackgroundColor="#0d0021" MinimumWidthRequest="150" MaximumWidthRequest="150" IsPassword="True"/>
                     </VerticalStackLayout>
                 </HorizontalStackLayout>
                 <HorizontalStackLayout Margin="30" HorizontalOptions="Center">
-                    <Button Text="Login" BackgroundColor="#0000B5" TextColor="White" Clicked="Button_Clicked"/>
+                    <Button Text="Login" BackgroundColor="#0000B5" TextColor="White" Clicked="Button_Clicked" />
                 </HorizontalStackLayout>
             </StackLayout>
         </Border>

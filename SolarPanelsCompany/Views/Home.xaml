@@ -7,7 +7,7 @@
         <Label Text="Home" FontSize="45" FontFamily="Roboto" TextColor="Black" HorizontalTextAlignment="Center"/>
         <StackLayout VerticalOptions="Center" Margin="25">
             <Button BindingContext="{x:Reference border}" x:Name="logoutButton" Text="Logout" BackgroundColor="#0000B5"
-                    TextColor="White" Margin="0, 5, 25, 0" WidthRequest="100" HorizontalOptions="End" Clicked="Button_Clicked"/>
+                    TextColor="White" Margin="0, 5, 25, 0" MaximumWidthRequest="100" HorizontalOptions="End" Clicked="Button_Clicked"/>
             <Border
                 x:Name="border"
                 MinimumHeightRequest="300"
