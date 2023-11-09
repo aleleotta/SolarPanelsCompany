@@ -6,15 +6,18 @@
     <StackLayout>
         <Label Text="Home" FontSize="45" FontFamily="Roboto" TextColor="Black" HorizontalTextAlignment="Center"/>
         <StackLayout VerticalOptions="Center" Margin="25">
+            <Button BindingContext="{x:Reference border}" x:Name="logoutButton" Text="Logout" BackgroundColor="#0000B5"
+                    TextColor="White" Margin="0, 5, 25, 0" WidthRequest="100" HorizontalOptions="End" Clicked="Button_Clicked"/>
             <Border
+                x:Name="border"
                 MinimumHeightRequest="300"
                 MinimumWidthRequest="300"
-                MaximumHeightRequest="300"
                 MaximumWidthRequest="800"
                 BackgroundColor="#0d0041"
                 Stroke="Black"
                 StrokeThickness="0.1"
                 StrokeShape="RoundRectangle 20, 20, 20, 20"
+                Margin="0, 5, 0, 0"
                 Padding="6">
                 <StackLayout>
                     <Label Text="Appointments" HorizontalTextAlignment="Center" FontSize="24" FontAttributes="Bold" FontFamily="Roboto"/>
