@@ -10,8 +10,8 @@
                     TextColor="White" Margin="0, 5, 25, 0" MaximumWidthRequest="100" HorizontalOptions="End" Clicked="Button_Clicked"/>
             <Border
                 x:Name="border"
-                MinimumHeightRequest="300"
-                MinimumWidthRequest="300"
+                MinimumHeightRequest="200"
+                MinimumWidthRequest="200"
                 MaximumWidthRequest="800"
                 BackgroundColor="#0d0041"
                 Stroke="Black"
