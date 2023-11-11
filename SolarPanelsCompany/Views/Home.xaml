@@ -21,7 +21,7 @@
                 Padding="6">
                 <StackLayout>
                     <Label Text="Appointments" HorizontalTextAlignment="Center" FontSize="24" FontAttributes="Bold" FontFamily="Roboto"/>
-                    <HorizontalStackLayout></HorizontalStackLayout>
+                    <StackLayout></StackLayout>
                 </StackLayout>
             </Border>
         </StackLayout>
