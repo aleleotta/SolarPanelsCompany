@@ -1,4 +1,6 @@
-﻿namespace SolarPanelsCompany
+﻿using SolarPanelsCompany.Views;
+
+namespace SolarPanelsCompany
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new Home();
         }
     }
 }
