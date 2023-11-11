@@ -3,9 +3,6 @@ namespace SolarPanelsCompany.Views;
 public partial class Login : ContentPage
 {
 
-    public const String username = "aleleotta";
-    public const String password = "fakePassword2023";
-
     public Login()
     {
         InitializeComponent();
@@ -13,6 +10,8 @@ public partial class Login : ContentPage
 
     private async void Button_Clicked(object sender, EventArgs e)
     {
+        const String username = "aleleotta";
+        const String password = "fakePassword2023";
         if (usernameField.Text == username && passwordField.Text == password)
         {
             usernameField.Text = "";

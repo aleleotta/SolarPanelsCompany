@@ -10,5 +10,15 @@
         ContentTemplate="{DataTemplate local:Login}"
         Route="Login"
         />
-    
+
+    <ShellContent
+        ContentTemplate="{DataTemplate local:Home}"
+        Route="Home"
+        />
+
+    <ShellContent
+        ContentTemplate="{DataTemplate local:Details}"
+        Route="Details"
+        />
+
 </Shell>
